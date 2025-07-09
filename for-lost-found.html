@@ -1,9 +1,9 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Detail Cars - Postersz</title>
+    <title>For Lost Found - Postersz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!-- ************************************ -->
     <!-- STYLE SHEET -->
@@ -12,9 +12,6 @@
     <!-- ************************************ -->
     <!-- FONT AWSOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- SPLIDE JS PRODUCT IMAGE SLIDER -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css">
-
   </head>
   <body class="set-body-color">
     <!-- ************************************ -->
@@ -32,16 +29,6 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <!-- <li class="nav-item px-2">
               <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="about-us.html">About us</a>
-            </li>
-            <li class="nav-item dropdown px-2">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#chooseService" role="button">
-                Category &nbsp;<svg width="10" height="7" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.9113 4.28467C3.83096 4.28467 3.75619 4.27184 3.68696 4.24617C3.61774 4.22051 3.55191 4.17651 3.48946 4.11417L0.493297 1.11801C0.401075 1.02568 0.353852 0.909619 0.35163 0.769841C0.349519 0.630175 0.396741 0.512008 0.493297 0.415341C0.589964 0.318786 0.707074 0.270508 0.84463 0.270508C0.982186 0.270508 1.0993 0.318786 1.19596 0.415341L3.9113 3.13084L6.62663 0.415341C6.71896 0.323119 6.83502 0.275897 6.9748 0.273675C7.11446 0.271563 7.23263 0.318786 7.3293 0.415341C7.42585 0.512008 7.47413 0.629119 7.47413 0.766675C7.47413 0.90423 7.42585 1.02134 7.3293 1.11801L4.33313 4.11417C4.27069 4.17651 4.20485 4.22051 4.13563 4.24617C4.06641 4.27184 3.99163 4.28467 3.9113 4.28467Z" fill="white"/>
-                  </svg>
-              </a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link" href="services.html">Services</a>
@@ -143,24 +130,192 @@
       </div>
     </nav>
     <main class="set-main-sec container mb-5">
-      <section class="set-container-1000">
-        <div class="row">
-          <div class="col-lg-12 mt-20 mb-2">
-            <div class="set-back-btn">
-              <a href="#" class="f-14-gb text-decoration-none d-flex align-items-center gap-1"><img src="assets/images/arrow-right-01.png" alt="arrow"> Back</a>
+      <!-- ************************************ -->
+      <!-- FILTERS  -->
+      <!-- ************************************ --> 
+      <section class="set-main-filter mt-20">
+        <form action="" method="" enctype="">
+          <div class="row align-items-center">
+            <!-- LOCATION -->
+            <div class="col-lg-3 col-md-4 col-12">
+              <div class="position-relative set-border-line-right">
+                <img src="assets/images/select-location.png" alt="location" class="set-position-location">
+                <select class="form-select set-select-all set-select-filter" aria-label="Default select example" name="profile_type">
+                  <option selected>Choose city</option>
+                  <option value="New York, NY"><img src="assets/images/location-item.png" alt="location">New York, NY</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Houston">Houston</option>
+                  <option value="Philadelphia">Philadelphia</option>
+                </select>
+              </div>
+            </div>
+            <!-- SEARCH -->
+            <div class="col-lg-6 col-md-8 col-12">
+              <div class="input-group set-custom-search">
+                <input type="text" class="form-control" placeholder="Search anything...">
+                <button type="submit" class="input-group-text"><img src="assets/images/search-icon-outline.png" alt="search"></button>
+              </div>
+            </div>
+            <!-- SORT + FILTER -->
+            <div class="col-lg-3 col-md-12 col-12 mt-lg-0 mt-3">
+              <div class="d-flex align-items-center gap-2">
+                <div class="position-relative">
+                  <img src="assets/images/sort.png" alt="sort" class="set-position-location set-top-12">
+                  <select class="form-select set-select-all set-select-sort" aria-label="Default select example" name="profile_type">
+                    <option value="">Sort By</option>
+                    <option value="name_asc">Name (A–Z)</option>
+                    <option value="name_desc">Name (Z–A)</option>
+                    <option value="date_newest">Date (Newest First)</option>
+                    <option value="date_oldest">Date (Oldest First)</option>
+                    <option value="price_low_high">Price (Low to High)</option>
+                    <option value="price_high_low">Price (High to Low)</option>
+                    <option value="rating_high_low">Rating (High to Low)</option>
+                    <option value="rating_low_high">Rating (Low to High)</option>
+                    <option value="popularity">Most Popular</option>
+                    <option value="relevance">Most Relevant</option>
+                  </select>
+                </div>
+                <div class="set-flex-grow-1">
+                  <button type="button" class="set-btn-filter d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#chooseService">
+                    <img src="assets/images/filter.png" alt="filter">
+                    Filter<span class="set-filter-count">1</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="thumbnail_slider">
-              <!-- Primary Slider Start-->
-              <div id="primary_slider">
-                  <div class="splide__track position-relative">
-                      <div class="set-top-overlay-badges set-up-badges-detail">
-                        <span class="set-blue-card-badge">Cars Used</span>
-                        <span class="for-sale-badge">For Sale</span>
+        </form>
+      </section>
+      <!-- ************************************ -->
+      <!-- TABS -->
+      <!-- ************************************ -->
+      <section class="set-main-tabs mt-20">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <!-- ======================== -->
+          <!-- NAV TABS -->
+          <!-- ======================== -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link  d-flex align-items-center justify-content-center gap-1" id="business-tab" data-bs-toggle="tab" data-bs-target="#business-tab-pane" type="button" role="tab" aria-controls="business-tab-pane" aria-selected="false">Posts</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active d-flex align-items-center justify-content-center gap-1" id="listing-tab" data-bs-toggle="tab" data-bs-target="#listing-tab-pane" type="button" role="tab" aria-controls="listing-tab-pane" aria-selected="true">Listing</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link d-flex align-items-center justify-content-center gap-1" id="on-sale-tab" data-bs-toggle="tab" data-bs-target="#on-sale-tab-pane" type="button" role="tab" aria-controls="on-sale-tab-pane" aria-selected="false">Deals</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <!-- ======================== -->
+          <!-- POSTS -->
+          <!-- ======================== -->
+          <div class="tab-pane fade" id="business-tab-pane" role="tabpanel" aria-labelledby="business-tab" tabindex="0">
+            ...
+          </div>
+          <!-- ======================== -->
+          <!-- LISTING -->
+          <!-- ======================== -->
+          <div class="tab-pane fade show active" id="listing-tab-pane" role="tabpanel" aria-labelledby="listing-tab" tabindex="0">
+            <!-- CATEGORIES -->
+            <div class="mt-24">
+              <div class="d-flex justify-content-between align-items-end">
+                <h2 class="f-32-b m-0 text-dark">All Categories</h2>
+                <div>
+                  <a href="all-categories.html" class="set-view-all">View All <img src="assets/images/arrow-left.png" alt="arrow left"></a>
+                </div>
+              </div>
+              <div class="set-flex-categories">
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-real-state.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/real-state.png" alt="img">
+                    </div>
+                    <span>Real Estate</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-fashion.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/fashion.png" alt="img">
+                    </div>
+                    <span>Fashion</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-services.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/services.png" alt="img">
+                    </div>
+                    <span>Services</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-car.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/cars.png" alt="img">
+                    </div>
+                    <span>Cars & Vehicles</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-events.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/events.png" alt="img">
+                    </div>
+                    <span>Events</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-jobs.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/jobs.png" alt="img">
+                    </div>
+                    <span>Jobs</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-lost-found.html" class="d-block">
+                    <div class="set-card-img set-active-box">
+                      <img src="assets/images/lost.png" alt="img">
+                    </div>
+                    <span>Lost & Found</span>
+                  </a>
+                </div>
+                <!-- CARD -->
+                <div class="set-category-card text-center mt-20">
+                  <a href="for-general-items.html" class="d-block">
+                    <div class="set-card-img">
+                      <img src="assets/images/furniture.png" alt="img">
+                    </div>
+                    <span>General Items</span>
+                  </a>
+                </div>
+                <!-- END CARD -->
+              </div>
+            </div>
+            <!-- FOR LOST FOUND -->
+            <div class="set-main-cards-area mt-40">
+              <div class="d-flex justify-content-between align-items-end">
+                <h2 class="f-32-b m-0">Lost and Found</h2>
+              </div>
+              <!-- CARD GRID -->
+              <div class="row">
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <div class="set-top-overlay-badges">
+                        <span class="set-blue-card-badge set-badge-black">Lost & Found</span>
+                        <span class="for-sale-badge set-badge-red-org">Lost</span>
                       </div>
                       <!-- INTERACTION -->
-                      <div class="set-main-interaction set-overlay-for-interaction set-overlay-for-interaction h-100 set-up-interaction-detail">
+                      <div class="set-main-interaction set-overlay-for-interaction set-overlay-for-interaction h-100">
                         <div class="d-flex align-items-center justify-content-evenly flex-column h-100">
                           <div class="set-comment-card">
                             <img src="assets/images/view-icon.png" alt="view" height="17px" />
@@ -190,145 +345,336 @@
                           </div>
                         </div>
                       </div>
-                      <ul class="splide__list">
-                          <li class="splide__slide">
-                              <img src="assets/images/car-img-nissan.png" alt="product">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/images/userd-car-2.png" alt="product">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/images/userd-car-3.png" alt="product">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/images/userd-car-4.png" alt="product">
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- Primary Slider End-->
-              <!-- Thumbnal Slider Start-->
-              <div id="thumbnail_slider">
-                  <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">
-                              <img src="assets/images/car-img-nissan.png" alt="product">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/images/userd-car-2.png" alt="product">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/images/userd-car-3.png" alt="product">
-                          </li>
-                          <li class="splide__slide">
-                              <img src="assets/images/userd-car-4.png" alt="product">
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-             <!-- Thumbnal Slider End-->
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="set-detailed-content">
-                <div class="">
-                  <!-- CONTENT -->
-                  <div class="set-business-card-content set-detail-content-postersz position-relative">
-                    <!-- FOR USER -->
+                      <!-- PRODUCT IMG -->
+                      <a href="product-detail-lost-found-1.html" class="d-block">
+                        <img src="assets/images/lost-found-1.png" alt="car">
+                      </a>
+                    </div>
+                    <div class="set-category-card-content">
+                      <!-- FOR USER -->
                       <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center gap-1">
                           <a href="#" class="set-box-24-24"><img src="assets/images/user-img.jpg" alt="user"></a>
                           <div class="">
-                            <a href="#" class="f-14-bl fw-600 text-decoration-none">R. Montalvo</a>
-                            <span class="f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-07.png" alt="location" class="pe-1">Brooklyn, NY</a></span>
+                            <a href="#" class="f-12-bl fw-600 text-decoration-none">Daniel M. Taylor</a>
+                            <span class="f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-07.png" alt="location" class="pe-1">Central Park, New York City</a></span>
                           </div>
                         </div>
-                        <div class="d-flex align-items-center gap-3">
-                          <div class="d-flex align-items-center gap-2 justify-content-between">
-                            <span class="f-12-bl text-success fw-normal">Asking Price</span>
-                            <h5 class="f-16-bl fw-600 m-0">$7850.55</h5>
-                          </div>
+                        <div class="d-flex align-items-center gap-2">
                           <a href="#" class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/message.png" alt="message"></a>
+
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" height="22px" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Connect</a></li>
+                              <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                              <li><a class="dropdown-item" href="#">Report Post</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    <!-- TITLE -->
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div>
-                        <a href="#" class="d-block text-decoration-none f-24-gb fw-600 pe-5">Nissan X Trail New Shape</a>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-1">
+                        <a href="product-detail-lost-found-1.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Front-End Web Developer</a>
+                      </div>
+                      <div class="">
+                        <p class="f-12-g mb-0">Lost around 5 PM. Contains a laptop, notebooks, and...<a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card set-card-overflow-tag-scroll">
+                        <a href="#" class="set-tag-event text-decoration-none">Lost wallet</a>
+                        <a href="#" class="set-tag-event text-decoration-none checked-tag">Found personal item</a>
+                        <a href="#" class="set-tag-event text-decoration-none checked-tag">Lost item in NY</a>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-1">
+                        <span class="f-12-bl text-success fw-normal">Price </span>
+                        <h5 class="f-14-bl fw-600 m-0">Free</h5>
                       </div>
                     </div>
-                    
-                    <h4 class="f-18-gb mt-8 mb-0">Description</h4>
-                    <p class="f-16-grey-67 mb-0">Used - 2023 Kawasaki Mule PRO-FXR For Sale. Car is in fresh condition, well-maintained. No major repairs. Recently serviced. Registered in 2016. Documents are up to date. Selling urgently as I’m leaving the country."</p>
-                    <div class="set-box-white-varients mt-8">
-                      <!-- ROW 1 -->
-                      <div class="d-flex align-items-center justify-content-around set-flex-grow-inner">
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">Make</p>
-                          <h6 class="f-16-bl fw-600 mb-0">Nissan</h6>
-                        </a>
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">Condition</p>
-                          <h6 class="f-16-bl fw-600 mb-0">10+</h6>
-                        </a>
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">MPG</p>
-                          <h6 class="f-12-bl fw-600 mb-0">28/km</h6>
-                        </a>
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">Ratings</p>
-                          <h6 class="f-16-bl fw-600 mb-0">4.92</h6>
-                        </a>
-                      </div>
-                      <!-- ROW 2 -->
-                      <div class="d-flex align-items-center justify-content-around mt-16 set-flex-grow-inner">
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">Year</p>
-                          <h6 class="f-16-bl fw-600 mb-0">2012</h6>
-                        </a>
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">Color</p>
-                          <h6 class="f-16-bl fw-600 mb-0">Gray</h6>
-                        </a>
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">MPG</p>
-                          <h6 class="f-12-bl fw-600 mb-0">7,500</h6>
-                        </a>
-                        <!-- ITEMS -->
-                        <a href="#" class="d-block text-decoration-none text-center set-border-line-right">
-                          <p class="m-0 f-10-grey-67">Color</p>
-                          <h6 class="f-16-bl fw-600 mb-0">Mint</h6>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- BADGES -->
-                    <div class="set-card-badges">
-                      <a href="#" class="d-inline-block set-fs-14 mt-16">Nissan Rogue</a>
-                      <a href="#" class="d-inline-block set-fs-14 mt-10 checked-tag">All-Wheel Drive SUV</a>
-                      <a href="#" class="d-inline-block set-fs-14 mt-10">Fuel Efficient SUV</a>
-                      <a href="#" class="d-inline-block set-fs-14 mt-10">Keyless Entry</a>
-                      <a href="#" class="d-inline-block set-fs-14 mt-10">2023 Nissan Rogue SV AWD</a>
-                    </div>
-                  </div>
-                  <!-- ADD CALL  -->
-                  <div class="mt-5">
-                    <a href="#" class="set-btn-dark-blue">Add Call / Text Phone Number</a>
                   </div>
                 </div>
-                    
-                  
-                
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <div class="set-top-overlay-badges">
+                        <span class="set-blue-card-badge set-badge-black">Lost & Found</span>
+                        <span class="for-sale-badge set-badge-green-org">Found</span>
+                      </div>
+                      <!-- INTERACTION -->
+                      <div class="set-main-interaction set-overlay-for-interaction set-overlay-for-interaction h-100">
+                        <div class="d-flex align-items-center justify-content-evenly flex-column h-100">
+                          <div class="set-comment-card">
+                            <img src="assets/images/view-icon.png" alt="view" height="17px" />
+                            <p class="m-0 f-7-b">34</p>
+                          </div>
+                          <div class="set-share-card">
+                            <img src="assets/images/share.png" alt="share" height="17px" />
+                            <p class="m-0 f-7-b">03</p>
+                          </div>
+                          <div class="set-heart-card">
+                            <img
+                              src="assets/images/heart-outline.png"
+                              class="set-heart-icon"
+                              data-filled="assets/images/heart-solid.png"
+                              data-outline="assets/images/heart-outline.png"
+                              alt="Heart" height="17px"
+                            />
+                            <p class="m-0 f-7-b">02</p>
+                          </div>
+                          <div class="set-comment-card">
+                            <img src="assets/images/comment.png" alt="comment" height="17px" />
+                            <p class="m-0 f-7-b">01</p>
+                          </div>
+                          
+                          <div class="set-share-card">
+                            <img src="assets/images/tag-icon.png" alt="tag" height="17px" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- PRODUCT IMG -->
+                      <a href="product-detail-lost-found-2.html" class="d-block">
+                        <img src="assets/images/lost-found-2.png" alt="car">
+                      </a>
+                    </div>
+                    <div class="set-category-card-content">
+                      <!-- FOR USER -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-1">
+                          <a href="#" class="set-box-24-24"><img src="assets/images/user-img.jpg" alt="user"></a>
+                          <div class="">
+                            <a href="#" class="f-12-bl fw-600 text-decoration-none">Daniel M. Taylor</a>
+                            <span class="f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-07.png" alt="location" class="pe-1">Central Park, New York City</a></span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <a href="#" class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/message.png" alt="message"></a>
+
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" height="22px" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Connect</a></li>
+                              <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                              <li><a class="dropdown-item" href="#">Report Post</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-1">
+                        <a href="product-detail-lost-found-2.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Brown Leather Wallet</a>
+                      </div>
+                      <div class="">
+                        <p class="f-12-g mb-0">Found a wallet with several cards. Please describe the contents to...<a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card set-card-overflow-tag-scroll">
+                        <a href="#" class="set-tag-event text-decoration-none">Personal Item</a>
+                        <a href="#" class="set-tag-event text-decoration-none checked-tag">Backpack</a>
+                        <a href="#" class="set-tag-event text-decoration-none ">Wallet</a>
+                        <a href="#" class="set-tag-event text-decoration-none">Lost</a>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-1">
+                        <span class="f-12-bl text-success fw-normal">Price </span>
+                        <h5 class="f-14-bl fw-600 m-0">Free</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <div class="set-top-overlay-badges">
+                        <span class="set-blue-card-badge set-badge-black">Lost & Found</span>
+                        <span class="for-sale-badge set-badge-green-org">Found</span>
+                      </div>
+                      <!-- INTERACTION -->
+                      <div class="set-main-interaction set-overlay-for-interaction set-overlay-for-interaction h-100">
+                        <div class="d-flex align-items-center justify-content-evenly flex-column h-100">
+                          <div class="set-comment-card">
+                            <img src="assets/images/view-icon.png" alt="view" height="17px" />
+                            <p class="m-0 f-7-b">34</p>
+                          </div>
+                          <div class="set-share-card">
+                            <img src="assets/images/share.png" alt="share" height="17px" />
+                            <p class="m-0 f-7-b">03</p>
+                          </div>
+                          <div class="set-heart-card">
+                            <img
+                              src="assets/images/heart-outline.png"
+                              class="set-heart-icon"
+                              data-filled="assets/images/heart-solid.png"
+                              data-outline="assets/images/heart-outline.png"
+                              alt="Heart" height="17px"
+                            />
+                            <p class="m-0 f-7-b">02</p>
+                          </div>
+                          <div class="set-comment-card">
+                            <img src="assets/images/comment.png" alt="comment" height="17px" />
+                            <p class="m-0 f-7-b">01</p>
+                          </div>
+                          
+                          <div class="set-share-card">
+                            <img src="assets/images/tag-icon.png" alt="tag" height="17px" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- PRODUCT IMG -->
+                      <a href="product-detail-lost-found-3.html" class="d-block">
+                        <img src="assets/images/lost-found-3.png" alt="car">
+                      </a>
+                    </div>
+                    <div class="set-category-card-content">
+                      <!-- FOR USER -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-1">
+                          <a href="#" class="set-box-24-24"><img src="assets/images/user-img.jpg" alt="user"></a>
+                          <div class="">
+                            <a href="#" class="f-12-bl fw-600 text-decoration-none">Daniel M. Taylor</a>
+                            <span class="f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-07.png" alt="location" class="pe-1">Central Park, New York City</a></span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <a href="#" class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/message.png" alt="message"></a>
+
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" height="22px" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Connect</a></li>
+                              <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                              <li><a class="dropdown-item" href="#">Report Post</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-1">
+                        <a href="product-detail-lost-found-3.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">Blue School Backpack</a>
+                      </div>
+                      <div class="">
+                        <p class="f-12-g mb-0"> found a blue Jansport school backpack in Central Park near...<a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card set-card-overflow-tag-scroll">
+                        <a href="#" class="set-tag-event text-decoration-none">Kids’ Bag</a>
+                        <a href="#" class="set-tag-event text-decoration-none checked-tag">Backpack</a>
+                        <a href="#" class="set-tag-event text-decoration-none ">Books Inside</a>
+                        <a href="#" class="set-tag-event text-decoration-none ">Found</a>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-1">
+                        <span class="f-12-bl text-success fw-normal">Price </span>
+                        <h5 class="f-14-bl fw-600 m-0">Free</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-20">
+                  <div class="set-card-categories">
+                    <div class="set-category-card-img position-relative">
+                      <div class="set-top-overlay-badges">
+                        <span class="set-blue-card-badge set-badge-black">Lost & Found</span>
+                        <span class="for-sale-badge set-badge-red-org">Lost</span>
+                      </div>
+                      <!-- INTERACTION -->
+                      <div class="set-main-interaction set-overlay-for-interaction set-overlay-for-interaction h-100">
+                        <div class="d-flex align-items-center justify-content-evenly flex-column h-100">
+                          <div class="set-comment-card">
+                            <img src="assets/images/view-icon.png" alt="view" height="17px" />
+                            <p class="m-0 f-7-b">34</p>
+                          </div>
+                          <div class="set-share-card">
+                            <img src="assets/images/share.png" alt="share" height="17px" />
+                            <p class="m-0 f-7-b">03</p>
+                          </div>
+                          <div class="set-heart-card">
+                            <img
+                              src="assets/images/heart-outline.png"
+                              class="set-heart-icon"
+                              data-filled="assets/images/heart-solid.png"
+                              data-outline="assets/images/heart-outline.png"
+                              alt="Heart" height="17px"
+                            />
+                            <p class="m-0 f-7-b">02</p>
+                          </div>
+                          <div class="set-comment-card">
+                            <img src="assets/images/comment.png" alt="comment" height="17px" />
+                            <p class="m-0 f-7-b">01</p>
+                          </div>
+                          
+                          <div class="set-share-card">
+                            <img src="assets/images/tag-icon.png" alt="tag" height="17px" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- PRODUCT IMG -->
+                      <a href="product-detail-lost-found-4.html" class="d-block">
+                        <img src="assets/images/lost-found-4.png" alt="car">
+                      </a>
+                    </div>
+                    <div class="set-category-card-content">
+                      <!-- FOR USER -->
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-1">
+                          <a href="#" class="set-box-24-24"><img src="assets/images/user-img.jpg" alt="user"></a>
+                          <div class="">
+                            <a href="#" class="f-12-bl fw-600 text-decoration-none">Daniel M. Taylor</a>
+                            <span class="f-10-grey-67 d-flex gap-2 align-items-center"><a href="#" class="text-decoration-none f-12-grey-67"><img src="assets/images/location-07.png" alt="location" class="pe-1">Central Park, New York City</a></span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                          <a href="#" class="set-post-stamp d-inline-flex align-items-center gap-1 position-static"><img src="assets/images/message.png" alt="message"></a>
+
+                          <div class="dropdown set-btn-down-none">
+                            <button class="btn dropdown-toggle set-btn-ftr-dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/images/Claim.png" height="22px" alt="time">
+                            </button>
+                            <ul class="dropdown-menu set-position-inner">
+                              <li><a class="dropdown-item" href="#">Connect</a></li>
+                              <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                              <li><a class="dropdown-item" href="#">Report Post</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- TITLE PRICE -->
+                      <div class="d-flex justify-content-between mt-1">
+                        <a href="product-detail-lost-found-1.html" class="d-block text-decoration-none f-14-gb fw-600 pe-5">iPhone 14 Pro (Space Black)</a>
+                      </div>
+                      <div class="">
+                        <p class="f-12-g mb-0">I misplaced my iPhone 14 Pro at Starbucks in Union Square...<a href="#" class="f-12-bl text-decoration-none">Read More</a></p>
+                      </div>
+                      <!-- TAGS -->
+                      <div class="set-tags-event-card set-card-overflow-tag-scroll">
+                        <a href="#" class="set-tag-event text-decoration-none">lost iPhone 14 NYC</a>
+                        <a href="#" class="set-tag-event text-decoration-none checked-tag">Apple device lost</a>
+                        <a href="#" class="set-tag-event text-decoration-none">iPhone lost Union Square</a>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-1">
+                        <span class="f-12-bl text-success fw-normal">Price </span>
+                        <h5 class="f-14-bl fw-600 m-0">Free</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <!-- ======================== -->
+          <!-- DEALS -->
+          <!-- ======================== -->
+          <div class="tab-pane fade" id="on-sale-tab-pane" role="tabpanel" aria-labelledby="on-sale-tab" tabindex="0">
+            ...
           </div>
         </div>
       </section>
+        <!-- ======================== -->
+        <!-- BUSINESS -->
+        <!-- ======================== -->
     </main>
     <!-- ************************************ -->
     <!-- MODALS MAIN FILTER  -->
@@ -1349,8 +1695,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- PRODUCT DETAIL IAMGE SLIDER -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script>
       document.querySelectorAll('.range-wrapper').forEach(wrapper => {
         const rangeInput = wrapper.querySelector('input[type="range"]');
@@ -1364,50 +1708,6 @@
           rangeOutput.textContent = this.value;
         });
       });
-    </script>
-    <script>
-      // Count thumbnail slides
-      const thumbnailSlides = document.querySelectorAll('#thumbnail_slider .splide__slide').length;
-
-      // Determine if arrows should be shown
-      const showArrows = thumbnailSlides > 3;
-
-      // Initialize thumbnail slider
-      var thumbnailSlider = new Splide('#thumbnail_slider', {
-        rewind: true,
-        fixedWidth: 157,
-        fixedHeight: 128,
-        isNavigation: true,
-        gap: 5,
-        focus: 'center',
-        pagination: false,
-        cover: true,
-        arrows: showArrows,
-        breakpoints: {
-          '600': {
-            fixedWidth: 120,
-            fixedHeight: 82,
-          }
-        }
-      }).mount();
-
-      // Initialize primary slider
-      var primarySlider = new Splide('#primary_slider', {
-        type: 'fade',
-        pagination: false,
-        arrows: false,
-        cover: true,
-        fixedHeight: 424,
-        fixedWidth: 484,
-        breakpoints: {
-          '600': {
-            fixedWidth: 362,
-          }
-        }
-      });
-
-      // Sync primary with thumbnail
-      primarySlider.sync(thumbnailSlider).mount();
     </script>
 
   </body>
